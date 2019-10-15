@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="id.ac.unja.si.ktmscanner.activity.Home">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Selamat Datang"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="148dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/cardone" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="10sp"
+        android:text="Organisasi yang belum memiliki akun harap mengisi form pendaftaran pada website dan scan KTM di belakang perangkat ini untuk verifikasi."
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/instructionText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="10sp"
+        android:text='Organisasi yang sudah memiliki akun dan mahasiswa yang ingin mendaftar dapat langsung menekan tombol "Mulai" di bawah ini.'
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="213dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="onLoginClicked"
+        android:text="MULAI"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/stepText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Langkah 1/2"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+</LinearLayout>
